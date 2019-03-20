@@ -16,6 +16,8 @@ object QuestionA extends App {
 
     for (i <- 0 to str.size-1) {
       val v = str.charAt(i)
+      // uncomment the line below to understand/debug
+      // println(s"v:${v}, v.toInt:${v.toInt}")
       if (char_set(v)) return false
       char_set(v) = true
     }
